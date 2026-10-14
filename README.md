@@ -23,7 +23,7 @@ A Django REST Framework backend for paid one-to-one consultation sessions. Users
 - Django
 - Django REST Framework
 - DRF token authentication
-- SQLite for local development; PostgreSQL through `DATABASE_URL`
+- SQLite for local development
 
 ## Project layout
 
@@ -78,12 +78,6 @@ PowerShell example:
 $env:SECRET_KEY = "replace-with-a-long-random-secret"
 $env:DEBUG = "1"
 $env:ALLOWED_HOSTS = "127.0.0.1,localhost"
-```
-
-For PostgreSQL, set `DATABASE_URL` to a connection URL supported by `dj-database-url`, for example:
-
-```text
-postgresql://USER:PASSWORD@HOST:5432/DATABASE_NAME
 ```
 
 Do not commit real credentials or `.env` files.
